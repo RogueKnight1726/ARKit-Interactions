@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="App_for_designers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UKW-3t-Pj4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QMc-Zu-9Um">
+                                <rect key="frame" x="-0.5" y="10" width="375" height="667"/>
+                            </arscnView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plane Detected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSE-Lq-dDZ">
+                                <rect key="frame" x="129" y="333" width="117.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QMc-Zu-9Um" firstAttribute="centerX" secondItem="cLk-4W-Vwz" secondAttribute="centerX" id="2GB-fm-vUa"/>
+                            <constraint firstItem="SSE-Lq-dDZ" firstAttribute="centerX" secondItem="cLk-4W-Vwz" secondAttribute="centerX" id="3fl-rO-GHD"/>
+                            <constraint firstItem="SSE-Lq-dDZ" firstAttribute="centerY" secondItem="cLk-4W-Vwz" secondAttribute="centerY" id="aOA-o4-dHH"/>
+                            <constraint firstItem="QMc-Zu-9Um" firstAttribute="height" secondItem="UKW-3t-Pj4" secondAttribute="height" id="cFO-om-azs"/>
+                            <constraint firstItem="QMc-Zu-9Um" firstAttribute="centerY" secondItem="cLk-4W-Vwz" secondAttribute="centerY" id="glw-he-0bV"/>
+                            <constraint firstItem="QMc-Zu-9Um" firstAttribute="width" secondItem="UKW-3t-Pj4" secondAttribute="width" id="kII-JZ-BFD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cLk-4W-Vwz"/>
+                    </view>
+                    <connections>
+                        <outlet property="myLabel" destination="SSE-Lq-dDZ" id="B4W-Xt-aFs"/>
+                        <outlet property="sceneView" destination="QMc-Zu-9Um" id="uQT-7G-Zbh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
